@@ -1,0 +1,17 @@
+schema_version: "1.0"
+experiment_id: synthetic_batch_01
+reactor_type: batch
+data_file: batch_concentration.csv
+split: calibration
+conditions:
+  temperature_K: 330.0
+  pressure_Pa: 101325.0
+  volume_m3: 0.001
+  density_kg_m3: 1000.0
+  heat_capacity_J_kg_K: 4180.0
+  UA_W_K: 25.0
+columns:
+  - {name: time_s, quantity: time, unit: s, calibration_role: input}
+  - {name: A_mol_m3, quantity: concentration, species: A, unit: mol/m^3, calibration_role: target}
+  - {name: B_mol_m3, quantity: concentration, species: B, unit: mol/m^3, calibration_role: target}
+  - {name: temperature_K, quantity: temperature, unit: K, calibration_role: covariate}

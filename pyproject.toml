@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemical-reactor-digital-twin"
+version = "0.1.0"
+description = "Vendor-neutral reduced-order digital twin for laboratory and pilot-scale chemical reactors"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Vicena Research Twins"}]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7", "pyyaml>=6.0", "jsonschema>=4.18"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "jupyter>=1.0"]
+
+[project.scripts]
+reactor-twin = "chemical_reactor_twin.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

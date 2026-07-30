@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reaction network",
+  "type": "object",
+  "required": ["schema_version", "species", "reactions", "units"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "species": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "units": {
+      "type": "object",
+      "required": ["concentration", "time", "temperature", "pressure", "activation_energy", "reaction_enthalpy"],
+      "properties": {
+        "concentration": {"const": "mol/m^3"}, "time": {"const": "s"},
+        "temperature": {"const": "K"}, "pressure": {"const": "Pa"},
+        "activation_energy": {"const": "J/mol"}, "reaction_enthalpy": {"const": "J/mol_reaction"}
+      }
+    },
+    "reactions": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "stoichiometry", "reaction_orders", "pre_exponential", "activation_energy", "reaction_enthalpy"],
+        "properties": {
+          "id": {"type": "string"},
+          "equation": {"type": "string"},
+          "stoichiometry": {"type": "array", "items": {"type": "number"}},
+          "reaction_orders": {"type": "array", "items": {"type": "number", "minimum": 0}},
+          "pre_exponential": {"type": "number", "minimum": 0},
+          "pre_exponential_units": {"type": "string"},
+          "activation_energy": {"type": "number", "minimum": 0},
+          "reaction_enthalpy": {"type": "number"},
+          "source": {"type": "string"}
+        }
+      }
+    }
+  }
+}

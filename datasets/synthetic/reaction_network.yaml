@@ -1,0 +1,28 @@
+schema_version: "1.0"
+species: [A, B, C]
+units:
+  concentration: mol/m^3
+  time: s
+  temperature: K
+  pressure: Pa
+  activation_energy: J/mol
+  reaction_enthalpy: J/mol_reaction
+reactions:
+  - id: desired
+    equation: A -> B
+    stoichiometry: [-1, 1, 0]
+    reaction_orders: [1, 0, 0]
+    pre_exponential: 20.0
+    pre_exponential_units: 1/s
+    activation_energy: 12000.0
+    reaction_enthalpy: -20000.0
+    source: synthetic reference, not a real chemical recommendation
+  - id: undesired
+    equation: A -> C
+    stoichiometry: [-1, 0, 1]
+    reaction_orders: [1, 0, 0]
+    pre_exponential: 2.0
+    pre_exponential_units: 1/s
+    activation_energy: 15000.0
+    reaction_enthalpy: -30000.0
+    source: synthetic reference, not a real chemical recommendation

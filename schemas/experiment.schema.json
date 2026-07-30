@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reactor experiment metadata",
+  "type": "object",
+  "required": ["schema_version", "experiment_id", "reactor_type", "data_file", "columns", "conditions", "split"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "experiment_id": {"type": "string"},
+    "reactor_type": {"enum": ["batch", "cstr", "pfr"]},
+    "data_file": {"type": "string"},
+    "split": {"enum": ["calibration", "validation", "test"]},
+    "conditions": {
+      "type": "object",
+      "required": ["temperature_K", "pressure_Pa"],
+      "properties": {
+        "temperature_K": {"type": "number", "exclusiveMinimum": 0},
+        "pressure_Pa": {"type": "number", "exclusiveMinimum": 0},
+        "residence_time_s": {"type": "number", "exclusiveMinimum": 0},
+        "volume_m3": {"type": "number", "exclusiveMinimum": 0},
+        "density_kg_m3": {"type": "number", "exclusiveMinimum": 0},
+        "heat_capacity_J_kg_K": {"type": "number", "exclusiveMinimum": 0},
+        "UA_W_K": {"type": "number", "minimum": 0}
+      }
+    },
+    "columns": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "required": ["name", "quantity", "unit"],
+        "properties": {
+          "name": {"type": "string"},
+          "quantity": {"enum": ["time", "residence_time", "concentration", "temperature", "pressure", "spectroscopy", "flow"]},
+          "species": {"type": ["string", "null"]},
+          "unit": {"type": "string"},
+          "calibration_role": {"enum": ["input", "target", "covariate", "ignore"]}
+        }
+      }
+    },
+    "spectroscopy": {
+      "type": "object",
+      "properties": {
+        "method": {"type": "string"},
+        "wavelength_or_shift_unit": {"type": "string"},
+        "preprocessing": {"type": "array", "items": {"type": "string"}},
+        "calibration_model": {"type": "string"}
+      }
+    }
+  }
+}

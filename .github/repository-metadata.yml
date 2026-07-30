@@ -1,0 +1,15 @@
+description: "Open-source chemical reactor digital twin for batch, CSTR, and PFR modeling, calibration, validation, uncertainty, sensitivity, and optimization."
+topics:
+  - chemical-reactor
+  - reaction-engineering
+  - digital-twin
+  - process-systems-engineering
+  - kinetics
+  - thermodynamics
+  - scientific-computing
+  - parameter-estimation
+  - uncertainty-quantification
+  - process-safety
+  - open-source
+  - vicena
+homepage: "https://vicena.ai"
