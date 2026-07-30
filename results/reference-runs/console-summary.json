@@ -1,0 +1,16 @@
+{
+  "baseline_batch_conversion": 0.9337973722557376,
+  "baseline_batch_selectivity_B": 0.9673471523308793,
+  "baseline_batch_peak_temperature_K": 334.35561551474194,
+  "temperature_response_conversion_320_K": 0.6887316806215276,
+  "temperature_response_conversion_340_K": 0.7828706046490527,
+  "analytical_max_relative_error": 2.6776076538226335e-09,
+  "conservation_error_mol_m3": 4.547473508864641e-13,
+  "invalid_input_rejected": true,
+  "reference_files": {
+    "baseline.json": "e390b40199a7e2feb91884d9911af59a0b8a0ba2ec56025dee05b7409330a6e3",
+    "temperature-response.json": "9ddac80351463cbf295d08717c662489304491fc6ac4b2572497f925bb35ad12",
+    "validation.json": "4759cf2f3dbf0d2de8bbbeda6bd8eb2a52f80f8b6084d996e5d45857afed1a90",
+    "invalid-input.json": "d3fde679b9ca3b93a34d62365ad1aa4a0f068d40181d2cb88ca6c3a62f9a0117"
+  }
+}

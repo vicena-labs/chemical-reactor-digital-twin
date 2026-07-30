@@ -9,3 +9,5 @@ dist/
 outputs/*
 !outputs/.gitkeep
 .DS_Store
+
+.release-venv/

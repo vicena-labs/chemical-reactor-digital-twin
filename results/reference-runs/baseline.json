@@ -1,0 +1,80 @@
+{
+  "case": "baseline",
+  "status": "completed",
+  "command": "python scripts/run_reference_cases.py",
+  "simulator": "chemical_reactor_twin reduced-order ODE and algebraic models",
+  "python_version": "3.12.10",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.17.1",
+  "inputs": {
+    "species": [
+      "A",
+      "B",
+      "C"
+    ],
+    "feed_concentration_mol_m3": [
+      1000.0,
+      0.0,
+      0.0
+    ],
+    "temperature_K": 330.0,
+    "pressure_Pa": 101325.0,
+    "batch_duration_s": 10.0,
+    "continuous_residence_time_s": 10.0,
+    "batch_UA_W_K": 25.0,
+    "continuous_UA_over_volume_W_m3_K": 25000.0,
+    "synthetic_network": true
+  },
+  "runtime_s": 0.026441426947712898,
+  "results": {
+    "batch": {
+      "conversion": 0.9337973722557376,
+      "selectivity_B": 0.9673471523308793,
+      "outlet_temperature_K": 334.35561551474194,
+      "peak_temperature_K": 334.35561551474194,
+      "solver_diagnostics": {
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 116,
+        "njev": 1,
+        "method": "BDF",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "min_concentration": 0.0,
+        "max_temperature_K": 334.35561551474194
+      }
+    },
+    "cstr": {
+      "conversion": 0.7314773609333742,
+      "selectivity_B": 0.9672312122768816,
+      "outlet_temperature_K": 333.356488370749,
+      "peak_temperature_K": 333.356488370749,
+      "solver_diagnostics": {
+        "success": true,
+        "message": "`gtol` termination condition is satisfied.",
+        "nfev": 24,
+        "residual_norm": 6.007698035412917e-11,
+        "solver": "least_squares",
+        "max_temperature_K": 333.356488370749
+      }
+    },
+    "pfr": {
+      "conversion": 0.9337973722557875,
+      "selectivity_B": 0.9673471523308852,
+      "outlet_temperature_K": 334.35561551474245,
+      "peak_temperature_K": 334.35561551474245,
+      "solver_diagnostics": {
+        "success": true,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "nfev": 116,
+        "njev": 1,
+        "method": "BDF",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "max_temperature_K": 334.35561551474245
+      }
+    }
+  },
+  "maturity": "Level 0 executable reference",
+  "limitations": "Ideal homogeneous reactors, synthetic kinetics, lumped heat transfer, no scale-up or process-safety claim."
+}

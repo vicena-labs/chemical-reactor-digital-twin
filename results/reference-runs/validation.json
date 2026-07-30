@@ -1,0 +1,30 @@
+{
+  "case": "analytical_first_order_and_conservation",
+  "status": "completed",
+  "command": "python scripts/run_reference_cases.py",
+  "runtime_s": 0.009913576766848564,
+  "reference": "C_A(t) = C_A0 exp(-k t) for an isothermal first-order batch reaction",
+  "results": {
+    "k_1_s": 0.08,
+    "duration_s": 25.0,
+    "max_relative_error": 2.6776076538226335e-09,
+    "maximum_conservation_error_mol_m3": 4.547473508864641e-13,
+    "acceptance_limits": {
+      "max_relative_error": 1e-07,
+      "maximum_conservation_error_mol_m3": 1e-06
+    },
+    "passed": true,
+    "solver_diagnostics": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 184,
+      "njev": 1,
+      "method": "BDF",
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "min_concentration": 0.0,
+      "max_temperature_K": 300.0
+    }
+  },
+  "limitations": "Analytical verification checks implementation for a limiting case, not the validity of a real reaction mechanism."
+}

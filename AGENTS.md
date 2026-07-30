@@ -15,3 +15,10 @@ Read this file, AGENT_PLAYBOOK.md, and .agents/skills/chemical-reactor-digital-t
 
 ## Safety boundary
 This reduced-order twin is not a process-hazard analysis, relief-sizing tool, runaway calorimetry substitute, mechanical-integrity assessment, or operating procedure. Escalate real reactive hazards, pressure systems, flammability, toxic releases, unstable intermediates, and scale-up decisions to qualified process-safety personnel.
+
+## Model and simulation routing
+- The default local models are ideal homogeneous reduced-order batch, CSTR, and PFR balances implemented with SciPy.
+- Use local equations and notebooks for data validation, parameter estimation, uncertainty, sensitivity, and compact reference calculations.
+- Do not approximate CFD, multiphase transport, detailed mixing, or reactive-flow questions with the ideal models while claiming higher fidelity.
+- If managed remote compute is proposed, first read the applicable scientific-domain workflow index, select an exact registered workflow, then follow the documented Vicena Compute submission and evidence process.
+- Do not submit an unrelated remote solver merely to create a job record.

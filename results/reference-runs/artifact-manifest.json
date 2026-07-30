@@ -1,0 +1,50 @@
+{
+  "assets/vicena-logo.png": {
+    "sha256": "b2e5f2c1b0c99780c67aa3631495704c8dae74df20b2d5d4e9f247e5ebb5c0e1",
+    "size_bytes": 23938
+  },
+  "docs/assets/vicena-logo.png": {
+    "sha256": "b2e5f2c1b0c99780c67aa3631495704c8dae74df20b2d5d4e9f247e5ebb5c0e1",
+    "size_bytes": 23938
+  },
+  "assets/chemical-reactor-digital-twin-onepager.png": {
+    "sha256": "bbf22d19ce87a31a4b4ccd7f83f37b564aa71bbe7a992ab37333bf5eed6663f9",
+    "size_bytes": 312547
+  },
+  "docs/assets/chemical-reactor-digital-twin-onepager.png": {
+    "sha256": "bbf22d19ce87a31a4b4ccd7f83f37b564aa71bbe7a992ab37333bf5eed6663f9",
+    "size_bytes": 312547
+  },
+  "Chemical_Reactor_Digital_Twin_OnePager.pdf": {
+    "sha256": "f517982a33f6ae1609467c8a9d17f43cc8addf443069979c86b023ac2eaceec7",
+    "size_bytes": 50372
+  },
+  "results/reference-runs/baseline.json": {
+    "sha256": "e390b40199a7e2feb91884d9911af59a0b8a0ba2ec56025dee05b7409330a6e3",
+    "size_bytes": 2424
+  },
+  "results/reference-runs/temperature-response.json": {
+    "sha256": "9ddac80351463cbf295d08717c662489304491fc6ac4b2572497f925bb35ad12",
+    "size_bytes": 1678
+  },
+  "results/reference-runs/validation.json": {
+    "sha256": "4759cf2f3dbf0d2de8bbbeda6bd8eb2a52f80f8b6084d996e5d45857afed1a90",
+    "size_bytes": 1020
+  },
+  "results/reference-runs/invalid-input.json": {
+    "sha256": "d3fde679b9ca3b93a34d62365ad1aa4a0f068d40181d2cb88ca6c3a62f9a0117",
+    "size_bytes": 399
+  },
+  "results/reference-runs/summary.csv": {
+    "sha256": "e820edd5f2b8a4e945c349dea15ec0017a6ef18322b09eaeba261ea4a4581760",
+    "size_bytes": 553
+  },
+  "results/reference-runs/final-quickstart.txt": {
+    "sha256": "c617aef902a8984f68daab9a34c8281090f6fa3d5430fd70b92ac88430024479",
+    "size_bytes": 1291
+  },
+  "results/reference-runs/final-tests.txt": {
+    "sha256": "ea72fc4c0a745de08de614554f8d802e1a0e2b1092225dd4f48f9ad4220dcdb6",
+    "size_bytes": 939
+  }
+}

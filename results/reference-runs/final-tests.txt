@@ -1,0 +1,14 @@
+test_identifiability_rank_deficient (test_analysis.AnalysisTests.test_identifiability_rank_deficient) ... ok
+test_sensitivity (test_analysis.AnalysisTests.test_sensitivity) ... ok
+test_validation_exact (test_analysis.AnalysisTests.test_validation_exact) ... ok
+test_batch_conservation (test_models.ReactorTests.test_batch_conservation) ... ok
+test_cstr_mass_balance (test_models.ReactorTests.test_cstr_mass_balance) ... ok
+test_no_reaction_limit (test_models.ReactorTests.test_no_reaction_limit) ... ok
+test_pfr_more_conversion_than_cstr_first_order (test_models.ReactorTests.test_pfr_more_conversion_than_cstr_first_order) ... ok
+test_reject_negative_concentration (test_models.ReactorTests.test_reject_negative_concentration) ... ok
+test_zero_time_limit_via_short_time (test_models.ReactorTests.test_zero_time_limit_via_short_time) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.044s
+
+OK

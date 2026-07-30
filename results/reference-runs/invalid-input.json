@@ -1,0 +1,18 @@
+{
+  "case": "intentional_invalid_input",
+  "status": "rejected_as_expected",
+  "command": "python scripts/run_reference_cases.py",
+  "runtime_s": 2.308562397956848e-05,
+  "input": {
+    "initial_concentration_mol_m3": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "acceptance": {
+    "passed": true,
+    "exception": "ValueError",
+    "message": "Initial concentrations must be nonnegative"
+  }
+}
