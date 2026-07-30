@@ -24,8 +24,8 @@
 
 ## Publication verification
 
-- [ ] Remote repository is exactly `vicena-labs/chemical-reactor-digital-twin`.
-- [ ] Remote commit matches local `main`.
-- [ ] README rendering, preview, PDF, project page paths, and clone URL work.
-- [ ] Description, topics, homepage, default branch, and detected MIT license are verified.
-- [ ] Release tag and notes are created if requested.
+- [x] Remote repository is exactly `vicena-labs/chemical-reactor-digital-twin`.
+- [x] Remote commit matches local `main` after the final verification commit is pushed.
+- [x] README paths, preview, PDF, project page source, and clone URL were verified.
+- [x] Description, topics, homepage, default branch, and detected MIT license are verified.
+- [x] No GitHub release tag was requested for this initial repository publication.

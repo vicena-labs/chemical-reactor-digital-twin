@@ -1,0 +1,64 @@
+REMOTE_COMMIT
+7f253a483bd02aa9c06d2492abb2025ede42d5ef
+BASELINE
+{
+  "batch": {
+    "conversion": 0.9337973722557376,
+    "selectivity_B": 0.9673471523308793,
+    "outlet_temperature_K": 334.35561551474194,
+    "diagnostics": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 116,
+      "njev": 1,
+      "method": "BDF",
+      "rtol": 1e-07,
+      "atol": 1e-09,
+      "min_concentration": 0.0,
+      "max_temperature_K": 334.35561551474194
+    }
+  },
+  "cstr": {
+    "conversion": 0.7314773609333709,
+    "selectivity_B": 0.9672312122768818,
+    "outlet_temperature_K": 333.356488370749,
+    "diagnostics": {
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 24,
+      "residual_norm": 5.830944922435908e-11,
+      "solver": "least_squares",
+      "max_temperature_K": 333.356488370749
+    }
+  },
+  "pfr": {
+    "conversion": 0.9337973722557875,
+    "selectivity_B": 0.9673471523308852,
+    "outlet_temperature_K": 334.35561551474245,
+    "diagnostics": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 116,
+      "njev": 1,
+      "method": "BDF",
+      "rtol": 1e-07,
+      "atol": 1e-09,
+      "max_temperature_K": 334.35561551474245
+    }
+  }
+}
+TESTS
+test_identifiability_rank_deficient (test_analysis.AnalysisTests.test_identifiability_rank_deficient) ... ok
+test_sensitivity (test_analysis.AnalysisTests.test_sensitivity) ... ok
+test_validation_exact (test_analysis.AnalysisTests.test_validation_exact) ... ok
+test_batch_conservation (test_models.ReactorTests.test_batch_conservation) ... ok
+test_cstr_mass_balance (test_models.ReactorTests.test_cstr_mass_balance) ... ok
+test_no_reaction_limit (test_models.ReactorTests.test_no_reaction_limit) ... ok
+test_pfr_more_conversion_than_cstr_first_order (test_models.ReactorTests.test_pfr_more_conversion_than_cstr_first_order) ... ok
+test_reject_negative_concentration (test_models.ReactorTests.test_reject_negative_concentration) ... ok
+test_zero_time_limit_via_short_time (test_models.ReactorTests.test_zero_time_limit_via_short_time) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.048s
+
+OK

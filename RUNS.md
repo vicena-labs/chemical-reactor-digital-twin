@@ -87,3 +87,12 @@ No registered Vicena Compute workflow is scientifically required for these ideal
 - `results/reference-runs/final-quickstart.txt`
 - `results/reference-runs/final-tests.txt`
 - `results/reference-runs/artifact-manifest.json`
+
+## R6: published-clone verification
+
+The public repository was cloned from `https://github.com/vicena-labs/chemical-reactor-digital-twin.git` into a clean directory. A new virtual environment installed the package in editable mode, reran the baseline, and ran all nine tests.
+
+- Verified remote commit: `7f253a483bd02aa9c06d2492abb2025ede42d5ef`
+- Baseline numerical answers matched R1.
+- Tests: 9 passed
+- Evidence: `results/reference-runs/published-clone-verification.txt`

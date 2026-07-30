@@ -46,5 +46,9 @@
   "results/reference-runs/final-tests.txt": {
     "sha256": "ea72fc4c0a745de08de614554f8d802e1a0e2b1092225dd4f48f9ad4220dcdb6",
     "size_bytes": 939
+  },
+  "results/reference-runs/published-clone-verification.txt": {
+    "sha256": "bf15e0e46b69f4f9aeaf5b7297ba20ced8b0f5c8705617a01bfe3409f77dd8c6",
+    "size_bytes": 2300
   }
 }
