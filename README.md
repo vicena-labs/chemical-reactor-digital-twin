@@ -8,7 +8,7 @@
 <p align="center">
   <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-F8C73A">
   <img alt="Python 3.10 or newer" src="https://img.shields.io/badge/python-3.10%2B-3F7CAC">
-  <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-2A9D8F">
+  <img alt="Version 0.2.0" src="https://img.shields.io/badge/version-0.1.0-2A9D8F">
 </p>
 
 ---
@@ -21,7 +21,7 @@ An open-source, vendor-neutral, calibratable R&D digital twin for ideal laborato
 
 [![Chemical Reactor Digital Twin one-page overview](assets/chemical-reactor-digital-twin-onepager.png)](Chemical_Reactor_Digital_Twin_OnePager.pdf)
 
-## What release 0.1.0 provides
+## What release 0.2.0 provides
 
 - Configurable ideal batch, steady CSTR, and ideal PFR models.
 - Reaction networks with general stoichiometry, power-law orders, Arrhenius parameters, and reaction enthalpies.
@@ -46,9 +46,13 @@ The committed synthetic batch reference used 1000 mol/m3 A at 330 K for 10 s, a 
 
 Commands, versions, runtimes, units, acceptance criteria, limitations, and compact JSON and CSV artifacts are recorded in [RUNS.md](RUNS.md) and [results/reference-runs](results/reference-runs/).
 
+## Measured validation added in release 0.2.0
+
+A separate kinetics-benchmark lane now uses the measured [Silica Polymerization Experimental Data](https://doi.org/10.5281/zenodo.8324851). Across 61 within-experiment chronological tests, median normalized fourth-order RMSE was 0.1710 versus 0.3077 for a first-order baseline, and fourth order was better for 51 of 61 experiments. However, median empirical 90 percent interval coverage was only 0.1000, demonstrating serious late-time model drift. See [the measured validation protocol](docs/measured-validation.md).
+
 ## Scientific status
 
-This is a **Level 0 executable reference**. The bundled A to B or C reaction network and measurement series are abstract and synthetic. They demonstrate software architecture, equations, numerical behavior, data validation, and research workflows. They do not validate a real mechanism, reactor, material system, scale-up rule, or safe operating envelope.
+The generic reactor and synthetic reaction-network lanes remain a **Level 0 executable reference**. A separate measured silica-polymerization lane provides Level 1 measured benchmarking for within-experiment time extrapolation, but its poor interval coverage prevents a robust predictive claim. The bundled A to B or C reaction network remains abstract and synthetic. They demonstrate software architecture, equations, numerical behavior, data validation, and research workflows. They do not validate a real mechanism, reactor, material system, scale-up rule, or safe operating envelope.
 
 A successful solver exit proves numerical execution only. Chemical validity requires independently reviewed stoichiometry, kinetic and thermodynamic provenance, phase and transport assumptions, parameter identifiability, measured calibration data, held-out validation, uncertainty analysis, and process-safety review.
 

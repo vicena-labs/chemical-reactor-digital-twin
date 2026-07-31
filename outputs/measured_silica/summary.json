@@ -1,0 +1,1982 @@
+{
+  "scientific_status": "Measured-data Level 1 evidence for within-experiment silica polymerization time extrapolation",
+  "claim_boundary": "Does not validate a universal mechanism, cross-condition prediction, reactor scale-up, heat release, transport, or process safety",
+  "dataset": {
+    "name": "Silica polymerization experimental data",
+    "doi": "10.5281/zenodo.8324851",
+    "raw_sha256": "6e8d65f177305e1bc95b5effb2124bc1f32af94422a66454c1918bf3785226dc"
+  },
+  "split_fractions": {
+    "train": 0.6,
+    "calibration": 0.2,
+    "test": 0.2
+  },
+  "quality": {
+    "workbook_slots": 2989,
+    "accepted_observations": 1270,
+    "experiments": 61,
+    "quality_gate": "numeric time >= 0 min, silica > 0 mmol/kg, unique time, at least 8 observations per experiment"
+  },
+  "aggregate": {
+    "experiments": 61,
+    "median_fourth_order_rmse_normalized": 0.17100333575438423,
+    "median_first_order_rmse_normalized": 0.30767869522051755,
+    "fourth_order_better_count": 51,
+    "median_fourth_order_r2": -48.833699621052425,
+    "median_interval_coverage": 0.1
+  },
+  "per_experiment": [
+    {
+      "experiment_id": "2003-12_column_93",
+      "source_experiment": "2003-12",
+      "temperature_c": 80.0,
+      "ph": 4.49,
+      "ionic_strength_mol_kg": 0.119,
+      "rows": {
+        "train": 11,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.00010518892129898079,
+        "first_order_k_per_min": 8.882405999219909e-05
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.09216644839180431,
+        "rmse_normalized": 0.09728347377499312,
+        "bias_normalized": -0.04314310579504431,
+        "r2": -30.5058909369417
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.33458776674516333,
+        "rmse_normalized": 0.3368460718489592,
+        "bias_normalized": -0.33458776674516333,
+        "r2": -376.7257566546024
+      },
+      "absolute_residual_90_normalized": 0.2676637350400912,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2003-13_column_96",
+      "source_experiment": "2003-13",
+      "temperature_c": 80.0,
+      "ph": 5.43,
+      "ionic_strength_mol_kg": 0.119,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.002828345584522695,
+        "first_order_k_per_min": 0.0008832275969493469
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.2606472029099581,
+        "rmse_normalized": 0.26080836607654284,
+        "bias_normalized": -0.2606472029099581,
+        "r2": -4072.304555970055
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.34781249999999997,
+        "rmse_normalized": 0.34783650523629633,
+        "bias_normalized": -0.34781249999999997,
+        "r2": -7244.263157894693
+      },
+      "absolute_residual_90_normalized": 0.20151832599470354,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-14_column_99",
+      "source_experiment": "2003-14",
+      "temperature_c": 80.0,
+      "ph": 5.45,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0013421101988362989,
+        "first_order_k_per_min": 0.0010482740971995833
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.09918314945125328,
+        "rmse_normalized": 0.10650812112186307,
+        "bias_normalized": -0.021233625550734277,
+        "r2": -48.833699621052425
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.31820918017133726,
+        "rmse_normalized": 0.327358633778169,
+        "bias_normalized": -0.31820918017133726,
+        "r2": -469.7662089735237
+      },
+      "absolute_residual_90_normalized": 0.2057936051477125,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2003-15_column_102",
+      "source_experiment": "2003-15",
+      "temperature_c": 80.0,
+      "ph": 4.53,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 8,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.00033555044452783316,
+        "first_order_k_per_min": 0.00020876570723183773
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.17474316490229705,
+        "rmse_normalized": 0.1766877407587211,
+        "bias_normalized": -0.17474316490229705,
+        "r2": -2899.304718552667
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.36041665805017664,
+        "rmse_normalized": 0.36043159019425935,
+        "bias_normalized": -0.36041665805017664,
+        "r2": -12068.144576925564
+      },
+      "absolute_residual_90_normalized": 0.13530002864074908,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-16_column_105",
+      "source_experiment": "2003-16",
+      "temperature_c": 80.0,
+      "ph": 6.84,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 7,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.035982279957468416,
+        "first_order_k_per_min": 0.020198952595915927
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.11332775062308602,
+        "rmse_normalized": 0.1393529315531173,
+        "bias_normalized": -0.11332775062308602,
+        "r2": -19.024135285875303
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.36584435699868895,
+        "rmse_normalized": 0.3666705526746721,
+        "bias_normalized": -0.36584435699868895,
+        "r2": -137.6352335454347
+      },
+      "absolute_residual_90_normalized": 0.07809100845853628,
+      "empirical_interval_coverage": 0.3333333333333333
+    },
+    {
+      "experiment_id": "2003-17_column_108",
+      "source_experiment": "2003-17",
+      "temperature_c": 80.0,
+      "ph": 6.0,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 16,
+        "calibration": 5,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.003449937634147675,
+        "first_order_k_per_min": 0.002865673244389184
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.13804495675924774,
+        "rmse_normalized": 0.15563528076731323,
+        "bias_normalized": 0.054961861940963384,
+        "r2": -9.39086052381818
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.23090866904094717,
+        "rmse_normalized": 0.266619823067307,
+        "bias_normalized": -0.17891822143649702,
+        "r2": -29.494413159959535
+      },
+      "absolute_residual_90_normalized": 0.21880058945211311,
+      "empirical_interval_coverage": 0.8333333333333334
+    },
+    {
+      "experiment_id": "2003-18_column_111",
+      "source_experiment": "2003-18",
+      "temperature_c": 80.0,
+      "ph": 7.33,
+      "ionic_strength_mol_kg": 0.127,
+      "rows": {
+        "train": 8,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.11923283947200689,
+        "first_order_k_per_min": 0.036205620239718635
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.25887698673703863,
+        "rmse_normalized": 0.2628491139163995,
+        "bias_normalized": -0.25887698673703863,
+        "r2": -192.74704114655606
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.36208322250992603,
+        "rmse_normalized": 0.3625753055104735,
+        "bias_normalized": -0.36208322250992603,
+        "r2": -367.6536068530854
+      },
+      "absolute_residual_90_normalized": 0.09534684407642968,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-19_column_129",
+      "source_experiment": "2003-19",
+      "temperature_c": 80.0,
+      "ph": 8.2,
+      "ionic_strength_mol_kg": 0.125,
+      "rows": {
+        "train": 8,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.17138058220204944,
+        "first_order_k_per_min": 0.044241599580326356
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.2681003261907255,
+        "rmse_normalized": 0.2701983946389977,
+        "bias_normalized": -0.2681003261907255,
+        "r2": -96.1629652036116
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.3858333085283499,
+        "rmse_normalized": 0.3868058035499566,
+        "bias_normalized": -0.3858333085283499,
+        "r2": -198.122893447593
+      },
+      "absolute_residual_90_normalized": 0.22039063339786782,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-1_column_84",
+      "source_experiment": "2003-1",
+      "temperature_c": 80.0,
+      "ph": 2.18,
+      "ionic_strength_mol_kg": 0.127,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 5.528879090547992e-07,
+        "first_order_k_per_min": 5.45555378766947e-07
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.40786736641747595,
+        "rmse_normalized": 0.41183991740079695,
+        "bias_normalized": 0.40786736641747595,
+        "r2": -8.425759149169016
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.30755277048323393,
+        "rmse_normalized": 0.30767869522051755,
+        "bias_normalized": 0.30755277048323393,
+        "r2": -4.260830536644299
+      },
+      "absolute_residual_90_normalized": 0.3435949474575918,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-20_column_132",
+      "source_experiment": "2003-20",
+      "temperature_c": 80.0,
+      "ph": 8.27,
+      "ionic_strength_mol_kg": 0.121,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.1338392128193183,
+        "first_order_k_per_min": 0.033075246683310223
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.3506191224041597,
+        "rmse_normalized": 0.3506273590048585,
+        "bias_normalized": -0.3506191224041597,
+        "r2": -1205.9999420892386
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.40218750000000003,
+        "rmse_normalized": 0.4023141069177167,
+        "bias_normalized": -0.40218750000000003,
+        "r2": -1588.0814956855265
+      },
+      "absolute_residual_90_normalized": 0.3456625497176087,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-21_column_0",
+      "source_experiment": "2003-21",
+      "temperature_c": 80.0,
+      "ph": 8.75,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.033159988370981434,
+        "first_order_k_per_min": 0.016263627427842074
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.45388956337418535,
+        "rmse_normalized": 0.45389862934606556,
+        "bias_normalized": -0.45388956337418535,
+        "r2": -729.5004878794002
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.5387500000000001,
+        "rmse_normalized": 0.5390116823873116,
+        "bias_normalized": -0.5387500000000001,
+        "r2": -1029.1468144044325
+      },
+      "absolute_residual_90_normalized": 0.3897438154017288,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-21_column_135",
+      "source_experiment": "2003-21",
+      "temperature_c": 80.0,
+      "ph": 8.75,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.033159988370981434,
+        "first_order_k_per_min": 0.016263627427842074
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.45388956337418535,
+        "rmse_normalized": 0.45389862934606556,
+        "bias_normalized": -0.45388956337418535,
+        "r2": -729.5004878794002
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.5387500000000001,
+        "rmse_normalized": 0.5390116823873116,
+        "bias_normalized": -0.5387500000000001,
+        "r2": -1029.1468144044325
+      },
+      "absolute_residual_90_normalized": 0.3897438154017288,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-26_column_114",
+      "source_experiment": "2003-26",
+      "temperature_c": 80.0,
+      "ph": 7.13,
+      "ionic_strength_mol_kg": 0.135,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.1905494385250653,
+        "first_order_k_per_min": 0.053166692342150115
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.2602497682416381,
+        "rmse_normalized": 0.2603190155953163,
+        "bias_normalized": -0.2602497682416381,
+        "r2": -986.7294344164408
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.31458567679040117,
+        "rmse_normalized": 0.31469470267012917,
+        "bias_normalized": -0.31458567679040117,
+        "r2": -1442.4610655737697
+      },
+      "absolute_residual_90_normalized": 0.22486193766114676,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-27_column_117",
+      "source_experiment": "2003-27",
+      "temperature_c": 80.0,
+      "ph": 7.16,
+      "ionic_strength_mol_kg": 0.0338,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.12038297046882433,
+        "first_order_k_per_min": 0.03614326801188355
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.2520891154400826,
+        "rmse_normalized": 0.25268670892830686,
+        "bias_normalized": -0.2520891154400826,
+        "r2": -303.5640051326493
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.3343644544431946,
+        "rmse_normalized": 0.334677806587993,
+        "bias_normalized": -0.3343644544431946,
+        "r2": -533.2783855148996
+      },
+      "absolute_residual_90_normalized": 0.2036567165323764,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-28_column_120",
+      "source_experiment": "2003-28",
+      "temperature_c": 80.0,
+      "ph": 7.26,
+      "ionic_strength_mol_kg": 0.534,
+      "rows": {
+        "train": 8,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.46952844403521393,
+        "first_order_k_per_min": 0.10051874801287453
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.24972905721117078,
+        "rmse_normalized": 0.2497816836168342,
+        "bias_normalized": -0.24972905721117078,
+        "r2": -855.7171262831163
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.29321334833145857,
+        "rmse_normalized": 0.29333750728848457,
+        "bias_normalized": -0.29321334833145857,
+        "r2": -1180.548262548267
+      },
+      "absolute_residual_90_normalized": 0.23095528829605802,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-2_column_87",
+      "source_experiment": "2003-2",
+      "temperature_c": 80.0,
+      "ph": 3.45,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 7.551899075039329e-06,
+        "first_order_k_per_min": 6.549257432448781e-06
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.0837488858281254,
+        "rmse_normalized": 0.0969618311442671,
+        "bias_normalized": 0.0837488858281254,
+        "r2": -12.590111546614557
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.2728682395042482,
+        "rmse_normalized": 0.2744923406746566,
+        "bias_normalized": -0.2728682395042482,
+        "r2": -107.91353779106295
+      },
+      "absolute_residual_90_normalized": 0.236095841128453,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2003-3_column_78",
+      "source_experiment": "2003-3",
+      "temperature_c": 80.0,
+      "ph": 2.07,
+      "ionic_strength_mol_kg": 0.127,
+      "rows": {
+        "train": 7,
+        "calibration": 2,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 1.8725736324196046e-06,
+        "first_order_k_per_min": 1.7533595997492204e-06
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.06871596027357807,
+        "rmse_normalized": 0.07161883574173478,
+        "bias_normalized": -0.06871596027357807,
+        "r2": -4.408793310075684
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.20288136814130997,
+        "rmse_normalized": 0.21567333530346477,
+        "bias_normalized": -0.20288136814130997,
+        "r2": -48.049973999947845
+      },
+      "absolute_residual_90_normalized": 0.003696404276236964,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-4_column_81",
+      "source_experiment": "2003-4",
+      "temperature_c": 80.0,
+      "ph": 2.88,
+      "ionic_strength_mol_kg": 0.121,
+      "rows": {
+        "train": 6,
+        "calibration": 2,
+        "test": 2
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 9.667233204294946e-06,
+        "first_order_k_per_min": 7.352126179781561e-06
+      },
+      "fourth_order": {
+        "n": 2,
+        "mae_normalized": 0.13940203858295333,
+        "rmse_normalized": 0.14106079119773454,
+        "bias_normalized": -0.13940203858295333,
+        "r2": -129.30389746095054
+      },
+      "first_order_baseline": {
+        "n": 2,
+        "mae_normalized": 0.4645690120102375,
+        "rmse_normalized": 0.4680394652412955,
+        "bias_normalized": -0.4645690120102375,
+        "r2": -1433.5302939308613
+      },
+      "absolute_residual_90_normalized": 0.05193391174672213,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-5_column_90",
+      "source_experiment": "2003-5",
+      "temperature_c": 80.0,
+      "ph": 3.05,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 7,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 1.7352304439954132e-07,
+        "first_order_k_per_min": 1.7655972763236653e-07
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.47847127261050365,
+        "rmse_normalized": 0.47862858943592906,
+        "bias_normalized": 0.47847127261050365,
+        "r2": -339.2608255189427
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.4508397966019477,
+        "rmse_normalized": 0.4516284785518749,
+        "bias_normalized": 0.4508397966019477,
+        "r2": -301.9544373391201
+      },
+      "absolute_residual_90_normalized": 0.5014288056459101,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2003-6_column_126",
+      "source_experiment": "2003-6",
+      "temperature_c": 80.0,
+      "ph": 8.18,
+      "ionic_strength_mol_kg": 0.11,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.000186369501919985,
+        "first_order_k_per_min": 0.00014007904775282552
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.41571547243270296,
+        "rmse_normalized": 0.4157863565078447,
+        "bias_normalized": -0.41571547243270296,
+        "r2": -204.15620362903715
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.647998510217223,
+        "rmse_normalized": 0.6486482997224767,
+        "bias_normalized": -0.647998510217223,
+        "r2": -498.3013647937425
+      },
+      "absolute_residual_90_normalized": 0.35608572923791654,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2003-7_column_123",
+      "source_experiment": "2003-7",
+      "temperature_c": 80.0,
+      "ph": 7.93,
+      "ionic_strength_mol_kg": 0.11,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0002146420492659534,
+        "first_order_k_per_min": 8.790120716626217e-05
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.387239487083158,
+        "rmse_normalized": 0.38734951726115807,
+        "bias_normalized": -0.387239487083158,
+        "r2": -2249.594727836779
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.5899999077094343,
+        "rmse_normalized": 0.59005640253471,
+        "bias_normalized": -0.5899999077094343,
+        "r2": -5221.498372583047
+      },
+      "absolute_residual_90_normalized": 0.37502894285054955,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2004-1_column_51",
+      "source_experiment": "2004-1",
+      "temperature_c": 23.0,
+      "ph": 9.53,
+      "ionic_strength_mol_kg": 0.113,
+      "rows": {
+        "train": 6,
+        "calibration": 2,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.21303094324596786,
+        "first_order_k_per_min": 0.09229100347986084
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.19688997251283932,
+        "rmse_normalized": 0.19936234677396752,
+        "bias_normalized": -0.19688997251283932,
+        "r2": -332.72184984351105
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.4907821211039845,
+        "rmse_normalized": 0.49178010507360614,
+        "bias_normalized": -0.4907821211039845,
+        "r2": -2029.6743283646563
+      },
+      "absolute_residual_90_normalized": 0.11213672769386307,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2004-2_column_54",
+      "source_experiment": "2004-2",
+      "temperature_c": 23.0,
+      "ph": 9.0,
+      "ionic_strength_mol_kg": 0.016,
+      "rows": {
+        "train": 7,
+        "calibration": 2,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.24879282786818213,
+        "first_order_k_per_min": 0.06741351296345996
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.17147895028662766,
+        "rmse_normalized": 0.17390931317071096,
+        "bias_normalized": -0.17147895028662766,
+        "r2": -74.54554528848603
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.3282776012891182,
+        "rmse_normalized": 0.32888293138673097,
+        "bias_normalized": -0.3282776012891182,
+        "r2": -269.1754291116084
+      },
+      "absolute_residual_90_normalized": 0.08411267709748765,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2004-3_column_45",
+      "source_experiment": "2004-3",
+      "temperature_c": 23.0,
+      "ph": 9.14,
+      "ionic_strength_mol_kg": 0.0111,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.013269637382833106,
+        "first_order_k_per_min": 0.009103788931845358
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.14054442446696108,
+        "rmse_normalized": 0.17100333575438423,
+        "bias_normalized": -0.14054442446696108,
+        "r2": -8.779253401907692
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.37806872331856467,
+        "rmse_normalized": 0.40263059298835396,
+        "bias_normalized": -0.37806872331856467,
+        "r2": -53.21382839221838
+      },
+      "absolute_residual_90_normalized": 0.025190888672198875,
+      "empirical_interval_coverage": 0.3333333333333333
+    },
+    {
+      "experiment_id": "2004-4_column_42",
+      "source_experiment": "2004-4",
+      "temperature_c": 23.0,
+      "ph": 8.61,
+      "ionic_strength_mol_kg": 0.0111,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.02157247699449557,
+        "first_order_k_per_min": 0.01374363136613652
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.04820111874421913,
+        "rmse_normalized": 0.051073930319882666,
+        "bias_normalized": 0.037009246488859296,
+        "r2": 0.07391626579560495
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.1995347825091809,
+        "rmse_normalized": 0.23284811880012798,
+        "bias_normalized": -0.1995347825091809,
+        "r2": -18.248512089734096
+      },
+      "absolute_residual_90_normalized": 0.06387365652405874,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2004-5_column_18",
+      "source_experiment": "2004-5",
+      "temperature_c": 23.0,
+      "ph": 7.92,
+      "ionic_strength_mol_kg": 0.0111,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.00887677359330579,
+        "first_order_k_per_min": 0.0067225743428485875
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.09957237029213843,
+        "rmse_normalized": 0.1025165690897001,
+        "bias_normalized": 0.09957237029213843,
+        "r2": -1.0841102449899864
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.16029383353916316,
+        "rmse_normalized": 0.20139399778783665,
+        "bias_normalized": -0.15793201887541403,
+        "r2": -7.043139625197989
+      },
+      "absolute_residual_90_normalized": 0.09415695406423241,
+      "empirical_interval_coverage": 0.25
+    },
+    {
+      "experiment_id": "2004-6_column_48",
+      "source_experiment": "2004-6",
+      "temperature_c": 23.0,
+      "ph": 9.65,
+      "ionic_strength_mol_kg": 0.0111,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.00033048413387166937,
+        "first_order_k_per_min": 0.00031334700540162756
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.040414351083834454,
+        "rmse_normalized": 0.043357567589497985,
+        "bias_normalized": 0.040414351083834454,
+        "r2": 0.28303635878036415
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.05549076304831682,
+        "rmse_normalized": 0.05822878099981223,
+        "bias_normalized": -0.01684853667737471,
+        "r2": -0.29313155481468
+      },
+      "absolute_residual_90_normalized": 0.05525317806810126,
+      "empirical_interval_coverage": 0.75
+    },
+    {
+      "experiment_id": "2005-10_column_24",
+      "source_experiment": "2005-10",
+      "temperature_c": 23.0,
+      "ph": 8.24,
+      "ionic_strength_mol_kg": 0.113,
+      "rows": {
+        "train": 16,
+        "calibration": 5,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.005352777104316982,
+        "first_order_k_per_min": 0.0040227386384361
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.10032963312650152,
+        "rmse_normalized": 0.103807237650299,
+        "bias_normalized": 0.049315702550422454,
+        "r2": -1.7680869848923564
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.18233599178039417,
+        "rmse_normalized": 0.2256650697167236,
+        "bias_normalized": -0.18233599178039417,
+        "r2": -12.081367471792769
+      },
+      "absolute_residual_90_normalized": 0.12220308858931117,
+      "empirical_interval_coverage": 0.8333333333333334
+    },
+    {
+      "experiment_id": "2005-11_column_60",
+      "source_experiment": "2005-11",
+      "temperature_c": 58.0,
+      "ph": 7.68,
+      "ionic_strength_mol_kg": 0.119,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.3046326829798712,
+        "first_order_k_per_min": 0.05050088432200752
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.198101093411432,
+        "rmse_normalized": 0.20028923498583073,
+        "bias_normalized": -0.198101093411432,
+        "r2": -76.90521890457363
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.279166547872351,
+        "rmse_normalized": 0.2800872799395113,
+        "bias_normalized": -0.279166547872351,
+        "r2": -151.34847405642114
+      },
+      "absolute_residual_90_normalized": 0.13849127948533688,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-12_column_57",
+      "source_experiment": "2005-12",
+      "temperature_c": 58.0,
+      "ph": 8.02,
+      "ionic_strength_mol_kg": 0.118,
+      "rows": {
+        "train": 8,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.336187684177699,
+        "first_order_k_per_min": 0.07170919349008348
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.1988071554550724,
+        "rmse_normalized": 0.20192275525418252,
+        "bias_normalized": -0.1988071554550724,
+        "r2": -59.28011364352604
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.29333107828332367,
+        "rmse_normalized": 0.29448148501320537,
+        "bias_normalized": -0.29333107828332367,
+        "r2": -127.20929858566655
+      },
+      "absolute_residual_90_normalized": 0.13120329325827754,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-1_column_63",
+      "source_experiment": "2005-1",
+      "temperature_c": 58.0,
+      "ph": 7.4,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 12,
+        "calibration": 4,
+        "test": 5
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.15643918557281628,
+        "first_order_k_per_min": 0.03308183328120209
+      },
+      "fourth_order": {
+        "n": 5,
+        "mae_normalized": 0.2146307243636807,
+        "rmse_normalized": 0.21502352554706514,
+        "bias_normalized": -0.2146307243636807,
+        "r2": -1379.1527324981898
+      },
+      "first_order_baseline": {
+        "n": 5,
+        "mae_normalized": 0.268,
+        "rmse_normalized": 0.2680624927139192,
+        "bias_normalized": -0.268,
+        "r2": -2143.9999999999986
+      },
+      "absolute_residual_90_normalized": 0.17609673892321398,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-3_column_39",
+      "source_experiment": "2005-3",
+      "temperature_c": 23.0,
+      "ph": 8.93,
+      "ionic_strength_mol_kg": 0.108,
+      "rows": {
+        "train": 16,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.010591643554987585,
+        "first_order_k_per_min": 0.006291739006151993
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.23615451472077487,
+        "rmse_normalized": 0.24190764393000228,
+        "bias_normalized": -0.23615451472077487,
+        "r2": -1039.3432567424827
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.41496875530786864,
+        "rmse_normalized": 0.41503577902811006,
+        "bias_normalized": -0.41496875530786864,
+        "r2": -3061.305739972798
+      },
+      "absolute_residual_90_normalized": 0.05580601625700815,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-4_column_33",
+      "source_experiment": "2005-4",
+      "temperature_c": 23.0,
+      "ph": 8.88,
+      "ionic_strength_mol_kg": 0.109,
+      "rows": {
+        "train": 18,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.013061230988198442,
+        "first_order_k_per_min": 0.007768322683093608
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.18988386001558885,
+        "rmse_normalized": 0.20203131863716042,
+        "bias_normalized": -0.18988386001558885,
+        "r2": -34.90469232913165
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.38383719301417285,
+        "rmse_normalized": 0.3841739003161309,
+        "bias_normalized": -0.38383719301417285,
+        "r2": -128.82834660055957
+      },
+      "absolute_residual_90_normalized": 0.04994244458052349,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-6_column_36",
+      "source_experiment": "2005-6",
+      "temperature_c": 23.0,
+      "ph": 8.88,
+      "ionic_strength_mol_kg": 0.115,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0103703466114952,
+        "first_order_k_per_min": 0.007240727262280822
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.15702087321643518,
+        "rmse_normalized": 0.1599575097062388,
+        "bias_normalized": -0.15702087321643518,
+        "r2": -141.80784136607264
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.39493785939334874,
+        "rmse_normalized": 0.39516188108194694,
+        "bias_normalized": -0.39493785939334874,
+        "r2": -870.5511381965881
+      },
+      "absolute_residual_90_normalized": 0.06758285276241682,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-7_column_75",
+      "source_experiment": "2005-7",
+      "temperature_c": 58.0,
+      "ph": 8.48,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.27344399368596367,
+        "first_order_k_per_min": 0.05106537985236639
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.2557621012019796,
+        "rmse_normalized": 0.25768728560067217,
+        "bias_normalized": -0.2557621012019796,
+        "r2": -84.64857394141347
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.35781241974039024,
+        "rmse_normalized": 0.35889415816133763,
+        "bias_normalized": -0.35781241974039024,
+        "r2": -165.1372177410646
+      },
+      "absolute_residual_90_normalized": 0.20312615727498323,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2005-9_column_30",
+      "source_experiment": "2005-9",
+      "temperature_c": 23.0,
+      "ph": 8.66,
+      "ionic_strength_mol_kg": 0.111,
+      "rows": {
+        "train": 10,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.008983826509079595,
+        "first_order_k_per_min": 0.007027275140021699
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.12698632886677944,
+        "rmse_normalized": 0.14164217976908788,
+        "bias_normalized": -0.012619771044976962,
+        "r2": -93.32023107123025
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.2937079309592798,
+        "rmse_normalized": 0.3255037629693314,
+        "bias_normalized": -0.2680267230498547,
+        "r2": -497.1173626158943
+      },
+      "absolute_residual_90_normalized": 0.13123046599326016,
+      "empirical_interval_coverage": 0.75
+    },
+    {
+      "experiment_id": "2006-10_column_15",
+      "source_experiment": "2006-10",
+      "temperature_c": 23.0,
+      "ph": 8.02,
+      "ionic_strength_mol_kg": 0.116,
+      "rows": {
+        "train": 10,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.032781500587722126,
+        "first_order_k_per_min": 0.015446731475326523
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.07315471715498963,
+        "rmse_normalized": 0.08408813647531532,
+        "bias_normalized": -0.03947020339821046,
+        "r2": -1.3083048330264937
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.26309028432454074,
+        "rmse_normalized": 0.2636504718762666,
+        "bias_normalized": -0.26309028432454074,
+        "r2": -21.692419888162746
+      },
+      "absolute_residual_90_normalized": 0.059390799694362006,
+      "empirical_interval_coverage": 0.5
+    },
+    {
+      "experiment_id": "2006-1_column_69",
+      "source_experiment": "2006-1",
+      "temperature_c": 58.0,
+      "ph": 2.48,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 16,
+        "calibration": 5,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 1.4732749892472544e-06,
+        "first_order_k_per_min": 1.450982001194007e-06
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.25575258735807965,
+        "rmse_normalized": 0.2718288765522455,
+        "bias_normalized": 0.25575258735807965,
+        "r2": -3.210715990980238
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.2257021497110406,
+        "rmse_normalized": 0.23753049712733074,
+        "bias_normalized": 0.2257021497110406,
+        "r2": -2.2151669176861253
+      },
+      "absolute_residual_90_normalized": 0.047473967873425504,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2006-1_column_72",
+      "source_experiment": "2006-1",
+      "temperature_c": 58.0,
+      "ph": 2.48,
+      "ionic_strength_mol_kg": 0.12,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.2657780565376593,
+        "first_order_k_per_min": 0.05159479383332291
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.32392416100176796,
+        "rmse_normalized": 0.3240890146812656,
+        "bias_normalized": -0.32392416100176796,
+        "r2": -2273.413726156184
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.3629166666666667,
+        "rmse_normalized": 0.36298028527731363,
+        "bias_normalized": -0.3629166666666667,
+        "r2": -2852.0338345864716
+      },
+      "absolute_residual_90_normalized": 0.3053663333734351,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2006-2_column_66",
+      "source_experiment": "2006-2",
+      "temperature_c": 58.0,
+      "ph": 3.58,
+      "ionic_strength_mol_kg": 0.127,
+      "rows": {
+        "train": 13,
+        "calibration": 5,
+        "test": 5
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 2.2248157196905213e-05,
+        "first_order_k_per_min": 1.7093374136507074e-05
+      },
+      "fourth_order": {
+        "n": 5,
+        "mae_normalized": 0.1709711228081864,
+        "rmse_normalized": 0.17588692339686207,
+        "bias_normalized": 0.1709711228081864,
+        "r2": -12.547716147148506
+      },
+      "first_order_baseline": {
+        "n": 5,
+        "mae_normalized": 0.13426843360629426,
+        "rmse_normalized": 0.16890648604403036,
+        "bias_normalized": -0.10941318829439625,
+        "r2": -11.493716237242046
+      },
+      "absolute_residual_90_normalized": 0.19116943286428922,
+      "empirical_interval_coverage": 0.4
+    },
+    {
+      "experiment_id": "2006-3_column_12",
+      "source_experiment": "2006-3",
+      "temperature_c": 23.0,
+      "ph": 8.05,
+      "ionic_strength_mol_kg": 0.114,
+      "rows": {
+        "train": 18,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0034186365517013414,
+        "first_order_k_per_min": 0.002788160553275653
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.09377170136956663,
+        "rmse_normalized": 0.1109106767200077,
+        "bias_normalized": 0.03976754592392018,
+        "r2": -2.628822503068589
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.22813338705542596,
+        "rmse_normalized": 0.2720769089082755,
+        "bias_normalized": -0.22813338705542596,
+        "r2": -20.837473226513463
+      },
+      "absolute_residual_90_normalized": 0.18131300366339298,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2006-4_column_9",
+      "source_experiment": "2006-4",
+      "temperature_c": 23.0,
+      "ph": 7.62,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 13,
+        "calibration": 5,
+        "test": 5
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0016009608967613531,
+        "first_order_k_per_min": 0.0013145681872241174
+      },
+      "fourth_order": {
+        "n": 5,
+        "mae_normalized": 0.12090897813720658,
+        "rmse_normalized": 0.14435828365279166,
+        "bias_normalized": 0.11468775984299184,
+        "r2": -0.36727448474099345
+      },
+      "first_order_baseline": {
+        "n": 5,
+        "mae_normalized": 0.2039584553004536,
+        "rmse_normalized": 0.22469951131193744,
+        "bias_normalized": -0.051579356996810564,
+        "r2": -2.3126575720121707
+      },
+      "absolute_residual_90_normalized": 0.15451931269280528,
+      "empirical_interval_coverage": 0.4
+    },
+    {
+      "experiment_id": "2006-5_column_3",
+      "source_experiment": "2006-5",
+      "temperature_c": 23.0,
+      "ph": 5.66,
+      "ionic_strength_mol_kg": 0.119,
+      "rows": {
+        "train": 16,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 9.128352182695819e-06,
+        "first_order_k_per_min": 8.705199644314763e-06
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.37015548843874213,
+        "rmse_normalized": 0.3734929285187389,
+        "bias_normalized": 0.37015548843874213,
+        "r2": -10.751923794596932
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.2934928636091701,
+        "rmse_normalized": 0.31601789566037003,
+        "bias_normalized": 0.2934928636091701,
+        "r2": -7.4133228189174645
+      },
+      "absolute_residual_90_normalized": 0.24015946944662148,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2006-6_column_27",
+      "source_experiment": "2006-6",
+      "temperature_c": 23.0,
+      "ph": 8.63,
+      "ionic_strength_mol_kg": 0.111,
+      "rows": {
+        "train": 17,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.012458307144387715,
+        "first_order_k_per_min": 0.0076600950435527304
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.03916366363679544,
+        "rmse_normalized": 0.05300288938176683,
+        "bias_normalized": 0.0016771868929620626,
+        "r2": -0.5581708415040019
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.26867271612602034,
+        "rmse_normalized": 0.28184726831006907,
+        "bias_normalized": -0.26867271612602034,
+        "r2": -43.059913730011026
+      },
+      "absolute_residual_90_normalized": 0.06477958697624386,
+      "empirical_interval_coverage": 0.8333333333333334
+    },
+    {
+      "experiment_id": "2006-7_column_6",
+      "source_experiment": "2006-7",
+      "temperature_c": 23.0,
+      "ph": 7.11,
+      "ionic_strength_mol_kg": 0.118,
+      "rows": {
+        "train": 18,
+        "calibration": 6,
+        "test": 7
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0005270037878065702,
+        "first_order_k_per_min": 0.00046306793797813473
+      },
+      "fourth_order": {
+        "n": 7,
+        "mae_normalized": 0.1410718660528584,
+        "rmse_normalized": 0.16881794500074299,
+        "bias_normalized": 0.1322825325990988,
+        "r2": -0.5133598940686797
+      },
+      "first_order_baseline": {
+        "n": 7,
+        "mae_normalized": 0.18515076544879563,
+        "rmse_normalized": 0.20704807396586286,
+        "bias_normalized": -0.1017372068306336,
+        "r2": -1.2763937865312336
+      },
+      "absolute_residual_90_normalized": 0.11662630621222281,
+      "empirical_interval_coverage": 0.42857142857142855
+    },
+    {
+      "experiment_id": "2006-8_column_21",
+      "source_experiment": "2006-8",
+      "temperature_c": 23.0,
+      "ph": 8.01,
+      "ionic_strength_mol_kg": 0.117,
+      "rows": {
+        "train": 9,
+        "calibration": 3,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.06497571530314193,
+        "first_order_k_per_min": 0.03390568285192854
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.0794645861954968,
+        "rmse_normalized": 0.08146688007064792,
+        "bias_normalized": 0.026755779752569393,
+        "r2": -0.8768789610685936
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.22814138381793114,
+        "rmse_normalized": 0.23057136872918982,
+        "bias_normalized": -0.22814138381793114,
+        "r2": -14.034356785510388
+      },
+      "absolute_residual_90_normalized": 0.08941813146790212,
+      "empirical_interval_coverage": 0.75
+    },
+    {
+      "experiment_id": "2019-1_column_174",
+      "source_experiment": "2019-1",
+      "temperature_c": 40.0,
+      "ph": 7.5,
+      "ionic_strength_mol_kg": 0.0104072,
+      "rows": {
+        "train": 13,
+        "calibration": 4,
+        "test": 5
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0016654805685882884,
+        "first_order_k_per_min": 0.0013586734130098122
+      },
+      "fourth_order": {
+        "n": 5,
+        "mae_normalized": 0.031083033916994563,
+        "rmse_normalized": 0.04076408174987963,
+        "bias_normalized": 0.01685989420941585,
+        "r2": -5.635941118234769
+      },
+      "first_order_baseline": {
+        "n": 5,
+        "mae_normalized": 0.3526787676937842,
+        "rmse_normalized": 0.35519639291301264,
+        "bias_normalized": -0.3526787676937842,
+        "r2": -502.8303087301285
+      },
+      "absolute_residual_90_normalized": 0.1490196485196862,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2019-2_column_177",
+      "source_experiment": "2019-2",
+      "temperature_c": 40.0,
+      "ph": 9.5,
+      "ionic_strength_mol_kg": 0.00988472,
+      "rows": {
+        "train": 7,
+        "calibration": 3,
+        "test": 3
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0002538305497385676,
+        "first_order_k_per_min": 0.00023604902455798518
+      },
+      "fourth_order": {
+        "n": 3,
+        "mae_normalized": 0.02796973311313881,
+        "rmse_normalized": 0.03369344342324677,
+        "bias_normalized": -0.02356927370056472,
+        "r2": -37.08447420309371
+      },
+      "first_order_baseline": {
+        "n": 3,
+        "mae_normalized": 0.2217555221335549,
+        "rmse_normalized": 0.22926996226167234,
+        "bias_normalized": -0.2217555221335549,
+        "r2": -1762.4026453672445
+      },
+      "absolute_residual_90_normalized": 0.08249168627731729,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2019-3_column_180",
+      "source_experiment": "2019-3",
+      "temperature_c": 70.0,
+      "ph": 7.9,
+      "ionic_strength_mol_kg": 0.0113225,
+      "rows": {
+        "train": 12,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0002349971662695352,
+        "first_order_k_per_min": 0.00022554140485741406
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.12423485856618485,
+        "rmse_normalized": 0.12766918580673312,
+        "bias_normalized": 0.12423485856618485,
+        "r2": -36.04655946570721
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.07254315154486304,
+        "rmse_normalized": 0.08794852958187875,
+        "bias_normalized": -0.03548234525739749,
+        "r2": -16.580566661286223
+      },
+      "absolute_residual_90_normalized": 0.16989531519923906,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2020-10_column_162",
+      "source_experiment": "2020-10",
+      "temperature_c": 40.0,
+      "ph": 10.0,
+      "ionic_strength_mol_kg": 0.0150779,
+      "rows": {
+        "train": 18,
+        "calibration": 6,
+        "test": 7
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 1.2644735768692451e-06,
+        "first_order_k_per_min": 1.1835403543244215e-06
+      },
+      "fourth_order": {
+        "n": 7,
+        "mae_normalized": 0.10538967465770796,
+        "rmse_normalized": 0.11393053732170988,
+        "bias_normalized": 0.10538967465770796,
+        "r2": -5.171266747357821
+      },
+      "first_order_baseline": {
+        "n": 7,
+        "mae_normalized": 0.09432274506368146,
+        "rmse_normalized": 0.10375047357542169,
+        "bias_normalized": 0.09432274506368146,
+        "r2": -4.11769268407271
+      },
+      "absolute_residual_90_normalized": 0.1665944845511067,
+      "empirical_interval_coverage": 0.8571428571428571
+    },
+    {
+      "experiment_id": "2020-11_column_165",
+      "source_experiment": "2020-11",
+      "temperature_c": 40.0,
+      "ph": 7.0,
+      "ionic_strength_mol_kg": 0.0181721,
+      "rows": {
+        "train": 18,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.02262395607823115,
+        "first_order_k_per_min": 0.010867059345948405
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.054337668005187266,
+        "rmse_normalized": 0.058727491732937946,
+        "bias_normalized": -0.030753771963253382,
+        "r2": -5.360962107994226
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.2650482360944118,
+        "rmse_normalized": 0.2653577061585618,
+        "bias_normalized": -0.2650482360944118,
+        "r2": -128.86834688977135
+      },
+      "absolute_residual_90_normalized": 0.07402944223478641,
+      "empirical_interval_coverage": 0.8333333333333334
+    },
+    {
+      "experiment_id": "2020-12_column_168",
+      "source_experiment": "2020-12",
+      "temperature_c": 40.0,
+      "ph": 9.04,
+      "ionic_strength_mol_kg": 0.017998,
+      "rows": {
+        "train": 16,
+        "calibration": 5,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0034554543135964758,
+        "first_order_k_per_min": 0.0019770533112834832
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.15460413251899338,
+        "rmse_normalized": 0.15852722991497278,
+        "bias_normalized": -0.15460413251899338,
+        "r2": -333.3801740397432
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.36545151215270044,
+        "rmse_normalized": 0.36555431561922425,
+        "bias_normalized": -0.36545151215270044,
+        "r2": -1777.0198638271515
+      },
+      "absolute_residual_90_normalized": 0.1587415907242784,
+      "empirical_interval_coverage": 0.3333333333333333
+    },
+    {
+      "experiment_id": "2020-13_column_171",
+      "source_experiment": "2020-13",
+      "temperature_c": 40.0,
+      "ph": 10.0,
+      "ionic_strength_mol_kg": 0.0177775,
+      "rows": {
+        "train": 16,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.000939392328442105,
+        "first_order_k_per_min": 0.0006410596690110199
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.44192275944167275,
+        "rmse_normalized": 0.44278536324201945,
+        "bias_normalized": -0.44192275944167275,
+        "r2": -64.48991954549557
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.683903665553495,
+        "rmse_normalized": 0.6860202413893847,
+        "bias_normalized": -0.683903665553495,
+        "r2": -156.20335272714271
+      },
+      "absolute_residual_90_normalized": 0.2967816152355471,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2020-1_column_138",
+      "source_experiment": "2020-1",
+      "temperature_c": 40.0,
+      "ph": 3.0,
+      "ionic_strength_mol_kg": 0.018,
+      "rows": {
+        "train": 23,
+        "calibration": 8,
+        "test": 8
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 2.189519227159761e-05,
+        "first_order_k_per_min": 1.0492367588052484e-05
+      },
+      "fourth_order": {
+        "n": 8,
+        "mae_normalized": 0.11888291534764717,
+        "rmse_normalized": 0.12212493687778413,
+        "bias_normalized": 0.11888291534764717,
+        "r2": -11.258351604641469
+      },
+      "first_order_baseline": {
+        "n": 8,
+        "mae_normalized": 0.10405478933172635,
+        "rmse_normalized": 0.10731423924714201,
+        "bias_normalized": -0.10405478933172635,
+        "r2": -8.465380390473355
+      },
+      "absolute_residual_90_normalized": 0.08677966388605962,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2020-2_column_141",
+      "source_experiment": "2020-2",
+      "temperature_c": 40.0,
+      "ph": 4.0,
+      "ionic_strength_mol_kg": 0.02,
+      "rows": {
+        "train": 19,
+        "calibration": 7,
+        "test": 7
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 9.031639093442308e-05,
+        "first_order_k_per_min": 4.2681020970615645e-05
+      },
+      "fourth_order": {
+        "n": 7,
+        "mae_normalized": 0.07630742905560095,
+        "rmse_normalized": 0.0770536775509023,
+        "bias_normalized": 0.07630742905560095,
+        "r2": -77.06754513479318
+      },
+      "first_order_baseline": {
+        "n": 7,
+        "mae_normalized": 0.2389955396464023,
+        "rmse_normalized": 0.23943425363014775,
+        "bias_normalized": -0.2389955396464023,
+        "r2": -752.8003636511587
+      },
+      "absolute_residual_90_normalized": 0.11849679730426127,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2020-3_column_144",
+      "source_experiment": "2020-3",
+      "temperature_c": 40.0,
+      "ph": 5.0,
+      "ionic_strength_mol_kg": 0.025,
+      "rows": {
+        "train": 14,
+        "calibration": 5,
+        "test": 5
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0014443926376766737,
+        "first_order_k_per_min": 0.00030551469979490323
+      },
+      "fourth_order": {
+        "n": 5,
+        "mae_normalized": 0.0508047214306804,
+        "rmse_normalized": 0.0531453801239082,
+        "bias_normalized": -0.0508047214306804,
+        "r2": -19.203722123497492
+      },
+      "first_order_baseline": {
+        "n": 5,
+        "mae_normalized": 0.23732282347972608,
+        "rmse_normalized": 0.2376136146973295,
+        "bias_normalized": -0.23732282347972608,
+        "r2": -402.87130103446776
+      },
+      "absolute_residual_90_normalized": 0.02760566209386328,
+      "empirical_interval_coverage": 0.0
+    },
+    {
+      "experiment_id": "2020-5_column_147",
+      "source_experiment": "2020-5",
+      "temperature_c": 40.0,
+      "ph": 4.0,
+      "ionic_strength_mol_kg": 0.026,
+      "rows": {
+        "train": 28,
+        "calibration": 10,
+        "test": 10
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 3.154828107242054e-07,
+        "first_order_k_per_min": 3.0940007689889854e-07
+      },
+      "fourth_order": {
+        "n": 10,
+        "mae_normalized": 0.30608727442563977,
+        "rmse_normalized": 0.3165931113257072,
+        "bias_normalized": 0.30608727442563977,
+        "r2": -13.416033068220434
+      },
+      "first_order_baseline": {
+        "n": 10,
+        "mae_normalized": 0.3040471901737402,
+        "rmse_normalized": 0.31454696340624505,
+        "bias_normalized": 0.3040471901737402,
+        "r2": -13.230292986918998
+      },
+      "absolute_residual_90_normalized": 0.17754305192184927,
+      "empirical_interval_coverage": 0.1
+    },
+    {
+      "experiment_id": "2020-6_column_150",
+      "source_experiment": "2020-6",
+      "temperature_c": 40.0,
+      "ph": 5.02,
+      "ionic_strength_mol_kg": 0.013,
+      "rows": {
+        "train": 19,
+        "calibration": 7,
+        "test": 7
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 1.742381776218939e-05,
+        "first_order_k_per_min": 1.3115835386683e-05
+      },
+      "fourth_order": {
+        "n": 7,
+        "mae_normalized": 0.18079333436760758,
+        "rmse_normalized": 0.18125133023276008,
+        "bias_normalized": 0.18079333436760758,
+        "r2": -330.6065207894272
+      },
+      "first_order_baseline": {
+        "n": 7,
+        "mae_normalized": 0.036250956142260246,
+        "rmse_normalized": 0.044511908503786876,
+        "bias_normalized": -0.01643505157912471,
+        "r2": -18.999221388937517
+      },
+      "absolute_residual_90_normalized": 0.21753339617776918,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2020-7_column_153",
+      "source_experiment": "2020-7",
+      "temperature_c": 40.0,
+      "ph": 8.09,
+      "ionic_strength_mol_kg": 0.018783,
+      "rows": {
+        "train": 15,
+        "calibration": 5,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.040562875582181364,
+        "first_order_k_per_min": 0.012904210457291457
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.17878160444530422,
+        "rmse_normalized": 0.17912473678569427,
+        "bias_normalized": -0.17878160444530422,
+        "r2": -293.18061916322074
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.25112745749091353,
+        "rmse_normalized": 0.2513445202035674,
+        "bias_normalized": -0.25112745749091353,
+        "r2": -578.217626486961
+      },
+      "absolute_residual_90_normalized": 0.18029008466109847,
+      "empirical_interval_coverage": 0.5
+    },
+    {
+      "experiment_id": "2020-8_column_156",
+      "source_experiment": "2020-8",
+      "temperature_c": 40.0,
+      "ph": 5.9,
+      "ionic_strength_mol_kg": 0.0257222,
+      "rows": {
+        "train": 17,
+        "calibration": 6,
+        "test": 6
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0022290741299127005,
+        "first_order_k_per_min": 0.0018996616170623567
+      },
+      "fourth_order": {
+        "n": 6,
+        "mae_normalized": 0.1455632731351032,
+        "rmse_normalized": 0.16128297935436767,
+        "bias_normalized": 0.1455632731351032,
+        "r2": -57.4930771561454
+      },
+      "first_order_baseline": {
+        "n": 6,
+        "mae_normalized": 0.1987556999619358,
+        "rmse_normalized": 0.20102763576237073,
+        "bias_normalized": -0.1987556999619358,
+        "r2": -89.8738491947296
+      },
+      "absolute_residual_90_normalized": 0.27914099345487947,
+      "empirical_interval_coverage": 1.0
+    },
+    {
+      "experiment_id": "2020-9_column_159",
+      "source_experiment": "2020-9",
+      "temperature_c": 40.0,
+      "ph": 5.94,
+      "ionic_strength_mol_kg": 0.0126736,
+      "rows": {
+        "train": 12,
+        "calibration": 4,
+        "test": 4
+      },
+      "fitted": {
+        "normalized_fourth_order_k_per_min": 0.0008855113499353025,
+        "first_order_k_per_min": 0.0003674674451907952
+      },
+      "fourth_order": {
+        "n": 4,
+        "mae_normalized": 0.051772526734029975,
+        "rmse_normalized": 0.05857641687134492,
+        "bias_normalized": 0.051772526734029975,
+        "r2": -9.012814776772379
+      },
+      "first_order_baseline": {
+        "n": 4,
+        "mae_normalized": 0.1478021125858151,
+        "rmse_normalized": 0.17163891146734025,
+        "bias_normalized": -0.1478021125858151,
+        "r2": -84.96904076670052
+      },
+      "absolute_residual_90_normalized": 0.0741960482929166,
+      "empirical_interval_coverage": 0.75
+    }
+  ]
+}
