@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, cite the repository and the kinetic or thermodynamic sources used in your project."
 title: "Chemical Reactor Digital Twin"
 type: software
-version: 0.1.0
+version: 0.2.0
 license: MIT
 repository-code: "https://github.com/vicena-labs/chemical-reactor-digital-twin"
 url: "https://github.com/vicena-labs/chemical-reactor-digital-twin"
